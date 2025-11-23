@@ -31,10 +31,25 @@ header p {
     color: #555;
 }
 
+/* Original single featured image (now replaced by collage) */
 header .featured-image {
     width: 100%;
     height: auto;
     margin: 20px 0;
+}
+
+/* New three-image collage */
+header .featured-collage {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+header .featured-collage img {
+    width: calc((100% - 20px) / 3);
+    height: auto;
+    border-radius: 4px;
 }
 
 header .btn {
